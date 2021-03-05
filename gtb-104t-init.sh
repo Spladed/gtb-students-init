@@ -54,7 +54,7 @@ done
 ######## Set up #######
 
 echo -e "\nYour local environment is setting up, please wait..."
-mkdir ~/.gradle && touch ~/.gradle/gradle.properties
+mkdir -p ~/.gradle && touch ~/.gradle/gradle.properties
 
 grep -vq "systemProp.gtb" ~/.gradle/gradle.properties >tmp || mv tmp ~/.gradle/gradle.properties
 
