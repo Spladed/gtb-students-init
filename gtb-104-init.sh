@@ -1,6 +1,6 @@
 #!/bin/bash
 
-THIS_TERM="gtb-102"
+THIS_TERM="gtb-104"
 STEP=0
 BASE_URL="http://8.131.255.5"
 
@@ -54,7 +54,7 @@ done
 ######## Set up #######
 
 echo -e "\nYour local environment is setting up, please wait..."
-mkdir ~/.gradle && touch ~/.gradle/gradle.properties
+mkdir -p ~/.gradle && touch ~/.gradle/gradle.properties
 
 grep -vq "systemProp.gtb" ~/.gradle/gradle.properties >tmp || mv tmp ~/.gradle/gradle.properties
 
